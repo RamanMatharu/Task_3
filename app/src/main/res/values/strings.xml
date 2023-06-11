@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Task_3</string>
+    <string name="main_window">Main Window</string>
+    <string name="name">Name</string>
+    <string name="uni_roll">University RollNo</string>
+    <string name="temp">Temperature</string>
+    <string name="move">Move Data</string>
+    <string name="data_transfer">Data from Main Window</string>
+    <string name="t_name">Name from Main Window</string>
+</resources>
