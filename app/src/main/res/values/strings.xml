@@ -7,4 +7,6 @@
     <string name="move">Move Data</string>
     <string name="data_transfer">Data from Main Window</string>
     <string name="t_name">Name from Main Window</string>
+    <string name="uniRoll">University RollNo</string>
+    <string name="dataTransfer">Data from Main Window</string>
 </resources>

@@ -13,12 +13,12 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/data_transfer"
+        android:text="@string/dataTransfer"
         android:textSize="25sp"
         android:textStyle="bold"/>
 
     <EditText
-        android:id="@+id/t_name"
+        android:id="@+id/tName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -26,7 +26,7 @@
         android:textSize="20sp"/>
 
     <EditText
-        android:id="@+id/t_uni_roll"
+        android:id="@+id/tUniRoll"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -34,7 +34,7 @@
         android:textSize="20sp"/>
 
     <EditText
-        android:id="@+id/t_temp"
+        android:id="@+id/tTemp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"

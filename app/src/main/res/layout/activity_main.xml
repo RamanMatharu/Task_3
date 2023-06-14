@@ -11,6 +11,7 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/main_window"
@@ -27,11 +28,11 @@
         android:textSize="20sp"/>
 
     <EditText
-        android:id="@+id/uni_roll"
+        android:id="@+id/uniRoll"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:hint="@string/uni_roll"
+        android:hint="@string/uniRoll"
         android:paddingTop="20dp"
         android:textSize="20sp"/>
 

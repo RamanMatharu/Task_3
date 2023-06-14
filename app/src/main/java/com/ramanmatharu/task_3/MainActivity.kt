@@ -9,7 +9,7 @@ import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
     lateinit var name : EditText
-    lateinit var uni_roll : EditText
+    lateinit var uniRoll : EditText
     lateinit var temp: EditText
     lateinit var moveBtn: Button
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,26 +17,26 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         name = findViewById(R.id.name)
-        uni_roll = findViewById(R.id.uni_roll)
+        uniRoll = findViewById(R.id.uniRoll)
         temp = findViewById(R.id.temp)
         moveBtn = findViewById(R.id.moveBtn)
 
         moveBtn.setOnClickListener {
-            if(name.text.toString().isEmpty()){
+            if(name.text.toString().isNullOrEmpty()){
                 name.error = "Enter your name"
-            }else if(uni_roll.text.toString().isEmpty()){
-                uni_roll.error="Enter your University RollNo"
-            }else if(temp.text.toString().isEmpty()){
+            }else if(uniRoll.text.toString().isNullOrEmpty()){
+                uniRoll.error="Enter your University RollNo"
+            }else if(temp.text.toString().isNullOrEmpty()){
                 temp.error="Enter temperature of your city"
             }else{
                 Toast.makeText(this,"Transfer is Successful",Toast.LENGTH_SHORT).show()
-                var t_name = name.text.toString()
-                var t_uniRoll = uni_roll.text.toString()
-                var t_temp = temp.text.toString()
+                var tName = name.text.toString()
+                var tUniRoll = uniRoll.text.toString()
+                var tTemp = temp.text.toString()
                 var intent = Intent(this,TransferActivity::class.java)
-                intent.putExtra("name",t_name)
-                intent.putExtra("rollNo",t_uniRoll)
-                intent.putExtra("temp",t_temp)
+                intent.putExtra("name",tName)
+                intent.putExtra("rollNo",tUniRoll)
+                intent.putExtra("temp",tTemp)
                 startActivity(intent)
                 finish()
             }
